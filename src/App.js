@@ -13,7 +13,8 @@ const newButtonColor = buttonColor === 'red'? 'blue': 'red'
       <button style={{backgroundColor:buttonColor}} onClick={()=> setButtonColor(newButtonColor)} disabled={disabled}>Change to {newButtonColor}
       </button>
       <br/>
-      <input type="checkbox" id='enable-button-checkbox' defaultChecked={disabled} aria-checked={disabled} onChange={(e)=> setDisabled(e.target.checked)}/>
+      <input type="checkbox" id='disable-button-checkbox' defaultChecked={disabled} aria-checked={disabled} onChange={(e)=> setDisabled(e.target.checked)}/>
+      <label htmlFor='disable-button-checkbox'>Disable button</label>
     </div>
   );
 }
